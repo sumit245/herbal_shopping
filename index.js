@@ -1,7 +1,9 @@
 const mongoose = require('mongoose')
 const express = require('express')
+const cors = require('cors')
 const productRoutes = require('./routes/productsRoutes')
 const vendorRoutes = require('./routes/vendorRoutes')
+// const uploads = require('./uploads')
 const app = express()
 require('dotenv').config()
 
@@ -16,7 +18,8 @@ mongoose.connect(MONGODB_URL)
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`)
 })
-
+app.use(cors())
 app.use(express.json())
 app.use('/api/products', productRoutes)
 app.use('/api/vendors', vendorRoutes)
+// app.use('/uploads', uploads)

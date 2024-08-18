@@ -1,6 +1,3 @@
-/node_modules/**
-.env
-
 # Logs
 logs
 *.log
@@ -10,9 +7,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-/hairnic/node_modules
-/hairnic/dist
-/hairnic/dist-ssr
+node_modules
+dist
+dist-ssr
 *.local
 
 # Editor directories and files
