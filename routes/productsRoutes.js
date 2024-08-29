@@ -8,7 +8,7 @@ const { createProduct,
 const { upload } = require('../middleware/imageUploader')
 const router = require('express').Router()
 
-router.post('/create-product', createProduct)
+router.post('/create-product', upload.single('product_image'), createProduct)
 router.get('/get-products/', getProduct)
 router.get('/get-product/:product-id', getProductByID)
 router.delete('/delete-product/:product-id', deleteProductById)

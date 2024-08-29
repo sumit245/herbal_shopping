@@ -2,13 +2,13 @@ const { verifyEmail } = require('../middleware/auth')
 const Vendor = require('../models/vendor.model')
 
 module.exports.createVendor = async (req, res) => {
-    console.log(req.body)
+    console.log(req.body, req.files)
     //TODO: modify the api to store images in a directory
     try {
         let vendor_id = await Vendor.countDocuments({})
         vendor_id = 'VEND'.concat(vendor_id.toString().padStart(4, "0"))
         console.log(vendor_id)
-        const vendor = new Vendor({ ...req.body, vendor_id: vendor_id })
+        const vendor = new Vendor({ ...req.body, vendor_id: vendor_id, profile_picture: `${req.file.destination}/${req.file.filename}` })
         await vendor.save()
         console.log('vendor created')
         res.status(200).send(vendor)

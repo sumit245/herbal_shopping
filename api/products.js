@@ -2,10 +2,11 @@ const Product = require('../models/products.model')
 
 
 module.exports.createProduct = async (req, res) => {
-    console.log(req.body)
+    console.log(req.body, req.file)
     //TODO: modify the api to store images in a directory
     try {
-        const product = new Product(req.body)
+        const newProd = { ...req.body, image_url: `${req.file.destination}/${req.file.filename}` }
+        const product = new Product(newProd)
         await product.save()
         res.status(201).send(product)
     } catch (err) {

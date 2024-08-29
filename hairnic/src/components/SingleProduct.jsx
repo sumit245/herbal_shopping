@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 export default function SingleProduct({ review_average, image_url, name, regular_price }) {
+    const [img_url, setImgUrl] = useState("")
     useEffect(() => {
-        console.log(image_url);
-    }, [])
+        setImgUrl(`http://localhost:4000${image_url}`)
+        console.log(img_url)
+    }, [image_url])
     return (
         <div
             className="col-md-6 col-lg-3 wow fadeIn"
@@ -17,7 +20,7 @@ export default function SingleProduct({ review_average, image_url, name, regular
             <div className="product-item text-center border h-100 p-4">
                 <img
                     className="img-fluid mb-4"
-                    src={image_url}
+                    src={img_url}
                     alt={name}
                 />
                 <div className="mb-2">

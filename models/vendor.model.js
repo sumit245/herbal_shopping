@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt')
 const vendorSchema = new mongoose.Schema({
     name: { type: String, lowercase: true, minLength: 5, maxLength: 40, required: true },
     vendor_id: { type: String },
+    profile_picture: { type: String },
     status: {
         type: String,
         default: 'active',
