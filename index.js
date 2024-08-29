@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const express = require('express')
 const cors = require('cors')
+const path = require('path')
 const productRoutes = require('./routes/productsRoutes')
 const vendorRoutes = require('./routes/vendorRoutes')
 // const uploads = require('./uploads')
