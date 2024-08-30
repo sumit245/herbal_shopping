@@ -15,7 +15,13 @@ const MyNavbar = () => {
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light p-0">
           <a href="index.html" className="navbar-brand">
-            <h2 className="text-white">Hairnic</h2>
+            {/* <h2 className="text-white">Hairnic</h2> */}
+            <img
+              
+              src="img/Nirogya_logo.jpg"
+              alt="Hairnic"
+              className="logo"
+            />
           </a>
           <button
             type="button"

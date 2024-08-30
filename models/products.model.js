@@ -1,52 +1,120 @@
-const mongoose = require('mongoose');
-const Vendor = require('./vendor.model');
+const mongoose = require("mongoose");
+const Vendor = require("./vendors.model");
 
-const productSchema = new mongoose.Schema({
-    hsn_code: {
-        type: mongoose.Types.UUID,
-        required: true,
-        unique: true
+const productSchema = new mongoose.Schema(
+  {
+    // SKU: {
+    //   type: String,
+    //   // required: true,
+    //   unique: true,
+    // },
+    name: {
+      type: String,
+      required: true,
+      minLength: 5,
+      maxLength: 40,
+      lowercase: true,
     },
-    SKU: String,
-    parent_id: String,
-    slug: String,
-    name: { type: String, lowercase: true, minLength: 5, maxLength: 40, required: true },
-    description: String,
-    summary: String,
-    vendor_id: { type: mongoose.Types.ObjectId, ref: Vendor },
-    shop_id: String,
-    brand_id: String,
-    status: Boolean,
-    total_wish: Number,
-    total_sales: Number,
-    regular_price: Number,
-    sale_price: Number,
-    sale_from: { type: Date, min: Date.now() },
-    sale_to: Date,
-    available_from: { type: Date, min: Date.now() },
-    available_to: Date,
-    featured: Boolean,
+    description: {
+      type: String,
+    },
+    status: {
+      type: Boolean,
+      default: true,
+    },
+    regular_price: {
+      type: Number,
+      required: true,
+    },
+    sale_price: {
+      type: Number,
+    },
+    sale_from: {
+      type: Date,
+    },
+    sale_to: {
+      type: Date,
+    },
+    weight: {
+      type: Number, // weight in grams or kilograms
+      required: true,
+    },
+    color: {
+      type: String,
+      required: true,
+    },
     total_stocks: {
-        type: Number,
-        required: [true, 'Number of stocks is required'],
-        min: [0, 'Stock Quantity cannot be negative'],
-        max: [100, 'Please dont waste your hard earned money'],
+      type: Number,
+      required: true,
+      min: 0,
     },
-    review_count: { type: Number, required: true, default: 0 },
-    review_average: { type: Number, required: true, default: 3, enum: [3, 4, 5] },
+    image_url: {
+      type: String, // path to image
+    },
     product_type: {
-        type: String,
-        enum: {
-            values: ['shoes', 'clothes'],
-            message: '{VALUE} we are not selling right now. Please contact admin!',
-        }
+      type: String,
+      required: true,
     },
-    image_url: String,//path to 
-}, {
-    timestamps: true,
-    versionKey: false
-})
+    brand_name: {
+      type: String,
+      required: true,
+    },
+    categories: {
+      name: {
+        type: String,
+        required: true,
+      },
+      slug: {
+        type: String,
+        required: true,
+      },
+      status: {
+        type: String,
+        enum: ["active", "inactive"],
+        default: "active",
+      },
+      is_featured: {
+        type: Boolean,
+        default: false,
+      },
+      commission_percentage: {
+        type: Number,
+        required: true,
+      },
+      image_url: {
+        type: String, // path to image
+      },
+    },
+    reviews: [
+      {
+        product_image: {
+          type: String, // path to product image
+        },
+        comments: {
+          type: String,
+          required: true,
+        },
 
-const Product = mongoose.model('Product', productSchema)
+        rating: {
+          type: Number,
+          min: 1,
+          max: 5,
+          required: true,
+        },
+        status: {
+          type: String,
+          enum: ["approved", "pending", "rejected"],
+          default: "pending",
+        },
+      },
+    ],
+  },
+  {
+    timestamps: true,
+    versionKey: false,
+  }
+);
+
+const Product = mongoose.model("Product", productSchema);
 
 module.exports = Product;
