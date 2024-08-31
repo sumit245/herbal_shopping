@@ -1,6 +1,6 @@
 import React from "react";
-import '../css/bootstrap.min.css';
-import '../css/style.css';
+import "../css/bootstrap.min.css";
+import "../css/style.css";
 import "../lib/animate/animate.min.css";
 const Product = () => {
   return (
@@ -19,11 +19,12 @@ const Product = () => {
           >
             <h1 className="text-primary mb-3">
               <span className="fw-light text-dark">Best Benefits Of Our</span>{" "}
-              Natural Hair Shampoo
+              Neem Face Wash
             </h1>
             <p className="mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              aliquet, erat non malesuada consequat, nibh erat tempus risus.
+              Neem Face Wash cleanses and purifies the skin, helping to fight
+              acne and control excess oil. Enriched with neem, it soothes and
+              refreshes for a clear, healthy complexion.
             </p>
           </div>
           <div className="row g-4 align-items-center">
@@ -45,10 +46,10 @@ const Product = () => {
                     <i className="fa fa-check fa-2x text-primary" />
                   </div>
                   <div className="ps-3">
-                    <h5>Natural &amp; Organic</h5>
+                    <h5>Cleanses Deeply </h5>
                     <hr className="w-25 bg-primary my-2" />
                     <span>
-                      Lorem ipsum dolor sit amet adipiscing elit aliquet.
+                      Removes dirt, oil, and impurities from the skin.
                     </span>
                   </div>
                 </div>
@@ -60,10 +61,10 @@ const Product = () => {
                     <i className="fa fa-check fa-2x text-primary" />
                   </div>
                   <div className="ps-3">
-                    <h5>Anti Hair Fall</h5>
+                    <h5>Prevents Acne</h5>
                     <hr className="w-25 bg-primary my-2" />
                     <span>
-                      Lorem ipsum dolor sit amet adipiscing elit aliquet.
+                      Helps to reduce and prevent breakouts by unclogging pores.
                     </span>
                   </div>
                 </div>
@@ -75,10 +76,11 @@ const Product = () => {
                     <i className="fa fa-check fa-2x text-primary" />
                   </div>
                   <div className="ps-3">
-                    <h5>Anti-dandruff</h5>
+                    <h5>Balances Oil</h5>
                     <hr className="w-25 bg-primary my-2" />
                     <span>
-                      Lorem ipsum dolor sit amet adipiscing elit aliquet.
+                      Controls excess oil production for a shine-free
+                      complexion.
                     </span>
                   </div>
                 </div>
@@ -95,7 +97,7 @@ const Product = () => {
             >
               <img
                 className="img-fluid animated pulse infinite"
-                src="./img/shampoo.png"
+                src="./img/facewash.webp"
                 alt="Natural Hair Shampoo"
               />
             </div>
@@ -117,10 +119,11 @@ const Product = () => {
                     <i className="fa fa-check fa-2x text-primary" />
                   </div>
                   <div className="ps-3">
-                    <h5>No Internal Side Effect</h5>
+                    <h5>Hydrates Skin</h5>
                     <hr className="w-25 bg-primary my-2" />
                     <span>
-                      Lorem ipsum dolor sit amet adipiscing elit aliquet.
+                      Keeps the skin hydrated, preventing dryness and
+                      irritation.
                     </span>
                   </div>
                 </div>
@@ -132,10 +135,11 @@ const Product = () => {
                     <i className="fa fa-check fa-2x text-primary" />
                   </div>
                   <div className="ps-3">
-                    <h5>No Skin Irritation</h5>
+                    <h5>Gentle Formula</h5>
                     <hr className="w-25 bg-primary my-2" />
                     <span>
-                      Lorem ipsum dolor sit amet adipiscing elit aliquet.
+                      Suitable for daily use and all skin types, including
+                      sensitive skin.
                     </span>
                   </div>
                 </div>
@@ -147,10 +151,11 @@ const Product = () => {
                     <i className="fa fa-check fa-2x text-primary" />
                   </div>
                   <div className="ps-3">
-                    <h5>No Artificial Smell</h5>
+                    <h5>Refreshes Skin</h5>
                     <hr className="w-25 bg-primary my-2" />
                     <span>
-                      Lorem ipsum dolor sit amet adipiscing elit aliquet.
+                      Leaves the skin feeling refreshed and rejuvenated after
+                      every wash.
                     </span>
                   </div>
                 </div>

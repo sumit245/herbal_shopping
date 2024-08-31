@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <div className="container-fluid bg-white footer">
+      <div className="container-fluid  footer">
         <div className="container py-5">
           <div className="row g-5">
             <div
@@ -16,12 +16,13 @@ const Footer = () => {
               }}
             >
               <a href="index.html" className="d-inline-block mb-3">
-                <h1 className="text-primary">Hairnic</h1>
+                <img src="img/logo.jpeg" alt="logo" className="logo" />
               </a>
+
               <p className="mb-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                aliquet, erat non malesuada consequat, nibh erat tempus risus,
-                vitae porttitor purus nisl vitae purus.
+                Nirogya Ayurveda offers holistic health solutions rooted in
+                ancient practices, promoting balance and well-being through
+                natural remedies.
               </p>
             </div>
             <div
@@ -36,15 +37,15 @@ const Footer = () => {
               <h5 className="mb-4">Get In Touch</h5>
               <p>
                 <i className="fa fa-map-marker-alt me-3" />
-                123 Street, New York, USA
+                Delhi
               </p>
               <p>
                 <i className="fa fa-phone-alt me-3" />
-                +012 345 67890
+                +91 9649240944
               </p>
               <p>
-                <i className="fa fa-envelope me-3" />
-                info@example.com
+                <i className="fa fa-envelope me-10" />
+                nirogyaayurveda24@gmail.com
               </p>
               <div className="d-flex pt-2">
                 <a className="btn btn-square btn-outline-primary me-1" href="">
@@ -71,20 +72,26 @@ const Footer = () => {
               }}
             >
               <h5 className="mb-4">Our Products</h5>
-              <a className="btn btn-link" href="">
-                Hair Shining Shampoo
+              <a
+                className="btn btn-link"
+                href="https://www.daburinternational.com"
+              >
+                Dabur
               </a>
-              <a className="btn btn-link" href="">
-                Anti-dandruff Shampoo
+              <a className="btn btn-link" href="https://www.baidyanath.co.in">
+                Baidyanath
               </a>
-              <a className="btn btn-link" href="">
-                Anti Hair Fall Shampoo
+              <a className="btn btn-link" href="https://www.vyaspharma.com">
+                VYSA
               </a>
-              <a className="btn btn-link" href="">
-                Hair Growing Shampoo
+              <a className="btn btn-link" href="https://www.keralaayurveda.biz">
+                Kerala Ayurveda
               </a>
-              <a className="btn btn-link" href="">
-                Anti smell Shampoo
+              <a className="btn btn-link" href="https://himalayawellness.in">
+                Himalaya
+              </a>
+              <a className="btn btn-link" href="https://www.aimilpharma.life">
+                AIMIL
               </a>
             </div>
             <div
@@ -123,8 +130,7 @@ const Footer = () => {
             animationDelay: "0.1s",
             animationName: "fadeIn",
           }}
-        >
-        </div>
+        ></div>
       </div>
     </div>
   );
