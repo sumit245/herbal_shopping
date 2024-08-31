@@ -66,6 +66,12 @@ img.animated.pulse {
 .sticky-top {
   top: -150px;
   transition: 0.5s;
+  background-color: var(--bs-primary);
+}
+.logo {
+  height: 60px;
+  width: 150px;
+  max-width: 150px;
 }
 
 .navbar {
@@ -84,7 +90,7 @@ img.animated.pulse {
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-  color: var(--bs-white);
+  color: var(--bs-dark);
 }
 
 .navbar .dropdown-toggle::after {

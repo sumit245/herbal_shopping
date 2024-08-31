@@ -20,7 +20,7 @@ const productSchema = new mongoose.Schema(
     },
     description: String,
     summary: String,
-   // vendor_id: { type: mongoose.Types.ObjectId, ref: Vendor },
+    // vendor_id: { type: mongoose.Types.ObjectId, ref: Vendor },
     shop_id: String,
     brand_id: String,
     status: Boolean,

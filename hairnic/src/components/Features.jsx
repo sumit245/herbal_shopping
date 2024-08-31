@@ -6,6 +6,7 @@ import {
   faLeaf,
   faTintSlash,
   faTimes,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Features = () => {
@@ -36,7 +37,7 @@ const Features = () => {
                   icon={faTintSlash}
                   className="fa-3x text-dark mb-4"
                 />
-                <h5 className="text-white mb-0">Anti Hair Fall</h5>
+                <h5 className="text-white mb-0">Supports Overall Wellness</h5>
               </div>
             </div>
           </div>
@@ -44,10 +45,10 @@ const Features = () => {
             <div className="feature-item position-relative bg-primary text-center p-3">
               <div className="border py-5 px-3">
                 <FontAwesomeIcon
-                  icon={faTimes}
+                  icon={faPhone}
                   className="fa-3x text-dark mb-4"
                 />
-                <h5 className="text-white mb-0">Hypoallergenic</h5>
+                <h5 className="text-white mb-0">24/7 Customer Support</h5>
               </div>
             </div>
           </div>

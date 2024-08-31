@@ -10,23 +10,23 @@ const DealsOfTheDay = () => {
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
               <img
                 className="img-fluid animated pulse infinite"
-                src="../img/kerala1.png"
-                alt="Shampoo"
+                src="../img/amla-sale.png"
+                alt="Oil"
+                style={{ height: "400px", width: "auto" }}
               />
             </div>
-
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
               <div className="bg-white text-center p-4">
                 <div className="border p-4">
-                  <p className="mb-2">Natural & Organic Shampoo</p>
+                  <p className="mb-2">Natural & Ayurvedic Oil</p>
                   <h2 className="fw-bold text-uppercase mb-4">
                     Deals of the Day
                   </h2>
-                  <h1 className="display-4 text-primary mb-4">₹399.99</h1>
-                  <h5>Fresh Organic Shampoo</h5>
+                  <h1 className="display-4 text-primary mb-4">₹99.99</h1>
+                  <h5>Fresh Ayurvedic Oil</h5>
                   <p className="mb-4">
-                    Designed to be gentle, suitable for all hair types, and
-                    ideal for daily use without stripping natural oils..
+                    Unlock the ancient secrets of wellness with our Ayurvedic
+                    oil, crafted to rejuvenate your body and calm your mind.
                   </p>
                   <div className="row g-0 cdt mb-4">
                     <div className="col-3">

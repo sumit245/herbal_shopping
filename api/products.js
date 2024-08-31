@@ -2,12 +2,10 @@ const Product = require("../models/products.model");
 
 module.exports.createProduct = async (req, res) => {
   console.log(req.body);
-
   try {
     const product = new Product(req.body);
     await product.save();
     res.status(201).send(product);
-   
   } catch (err) {
     res.status(500).send(err);
   }
@@ -50,8 +48,6 @@ module.exports.getProduct = async (req, res) => {
   }
 };
 // Get All Products
-
-// Select * from products where name="adidas" or name="rebok"
 
 module.exports.getProductByID = async (req, res) => {
   try {
