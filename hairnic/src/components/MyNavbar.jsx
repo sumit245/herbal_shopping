@@ -9,7 +9,7 @@ const MyNavbar = () => {
   }
   return (
     <div
-      className="container-fluid sticky-top bg-primary shadow-sm"
+      className="container-fluid sticky-top"
       style={{ top: 0 }}
     >
       <div className="container">

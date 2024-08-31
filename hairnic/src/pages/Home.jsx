@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import MyNavbar from "../components/MyNavbar";
 import Hero from "../components/Hero";
 import Product from "../components/Product";
-import HowToUse from "../components/HowToUse";
+// import HowToUse from "../components/HowToUse";
 import CartProduct from "../components/CartProduct";
 import Testimonial from "../components/Testimonial";
 import BlogArticle from "../components/BlogArticle";
@@ -31,7 +31,7 @@ export default function Home() {
       <About />
       <DealsOfTheDay />
       <Product />
-      <HowToUse />
+      {/* <HowToUse /> */}
       <CartProduct />
       <Testimonial />
       <BlogArticle />
