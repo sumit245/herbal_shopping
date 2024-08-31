@@ -1,19 +1,26 @@
-const mongoose = require('mongoose');
-const Vendor = require('./vendor.model');
+const mongoose = require("mongoose");
+const Vendor = require("./vendor.model");
 
-const productSchema = new mongoose.Schema({
-    hsn_code: {
-        type: mongoose.Types.UUID,
-        required: true,
-        unique: true
-    },
+const productSchema = new mongoose.Schema(
+  {
+    // hsn_code: {
+    //     type: mongoose.Types.UUID,
+    //     required: true,
+    //     unique: true
+    // },
     SKU: String,
     parent_id: String,
     slug: String,
-    name: { type: String, lowercase: true, minLength: 5, maxLength: 40, required: true },
+    name: {
+      type: String,
+      lowercase: true,
+      minLength: 5,
+      maxLength: 40,
+      required: true,
+    },
     description: String,
     summary: String,
-    vendor_id: { type: mongoose.Types.ObjectId, ref: Vendor },
+   // vendor_id: { type: mongoose.Types.ObjectId, ref: Vendor },
     shop_id: String,
     brand_id: String,
     status: Boolean,
@@ -27,26 +34,36 @@ const productSchema = new mongoose.Schema({
     available_to: Date,
     featured: Boolean,
     total_stocks: {
-        type: Number,
-        required: [true, 'Number of stocks is required'],
-        min: [0, 'Stock Quantity cannot be negative'],
-        max: [100, 'Please dont waste your hard earned money'],
+      type: Number,
+      required: [true, "Number of stocks is required"],
+      min: [0, "Stock Quantity cannot be negative"],
+      max: [100, "Please dont waste your hard earned money"],
     },
     review_count: { type: Number, required: true, default: 0 },
-    review_average: { type: Number, required: true, default: 3, enum: [3, 4, 5] },
-    product_type: {
-        type: String,
-        enum: {
-            values: ['shoes', 'clothes'],
-            message: '{VALUE} we are not selling right now. Please contact admin!',
-        }
+    review_average: {
+      type: Number,
+      required: true,
+      default: 3,
+      enum: [3, 4, 5],
     },
-    image_url: String,//path to 
-}, {
+    product_type: {
+      type: String,
+      enum: ["Shampoo"],
+      message: "{VALUE} we not selling right now. Please contact admin",
+    },
+    color: {
+      type: String,
+      unique: true,
+      enum: ["Red", "Blue", "Green", "Yellow", "Black", "White"],
+    },
+    image_url: String, //path to
+  },
+  {
     timestamps: true,
-    versionKey: false
-})
+    versionKey: false,
+  }
+);
 
-const Product = mongoose.model('Product', productSchema)
+const Product = mongoose.model("Product", productSchema);
 
 module.exports = Product;
