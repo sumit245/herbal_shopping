@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const BlogArticle = () => {
   return (
     <div className="container-fluid py-5">

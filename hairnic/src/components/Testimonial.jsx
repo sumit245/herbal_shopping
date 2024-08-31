@@ -61,12 +61,14 @@ const Testimonial = () => {
             <h1 className="text-white mb-3">
               Our Customer Said{" "}
               <span className="fw-light text-dark">
-                About Our Natural Shampoo
+                talking about our authentic products
               </span>
             </h1>
             <p className="mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-              aliquet, erat non malesuada consequat, nibh erat tempus risus.
+              Nirogya Ayurveda emphasizes a holistic approach to health,
+              focusing on balancing the mind, body, and spirit. It integrates
+              diet, lifestyle changes, herbal remedies, yoga, and meditation to
+              promote overall well-being.
             </p>
           </div>
           <div className="row justify-content-center">
@@ -83,14 +85,14 @@ const Testimonial = () => {
                     style={{ maxWidth: "150px", borderRadius: "50%" }} // adjust maxWidth as needed
                   />
                   <h5 className="fw-light lh-base text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Duis aliquet, erat non malesuada consequat, nibh erat tempus
-                    risus, vitae porttitor purus nisl vitae purus. Praesent
-                    tristique odio ut rutrum pellentesque. Fusce eget molestie
-                    est, at rutrum est. Nullam scelerisque libero nunc, vitae
-                    ullamcorper elit volutpat ut.
+                    "Nirogya Ayurveda" could refer to a brand, clinic, or
+                    concept related to Ayurvedic practices and health. Ayurveda
+                    is a traditional system of medicine that originated in India
+                    over 3,000 years ago. It focuses on balancing the body,
+                    mind, and spirit through diet, herbal treatments, yoga, and
+                    lifestyle changes.
                   </h5>
-                  <h5 className="mb-1">Client Name</h5>
+                  <h5 className="mb-1">Arushi</h5>
                   <h6 className="fw-light text-white fst-italic mb-0">
                     Profession
                   </h6>
@@ -107,14 +109,15 @@ const Testimonial = () => {
                     style={{ maxWidth: "150px", borderRadius: "50%" }} // adjust maxWidth as needed
                   />
                   <h5 className="fw-light lh-base text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Duis aliquet, erat non malesuada consequat, nibh erat tempus
-                    risus, vitae porttitor purus nisl vitae purus. Praesent
-                    tristique odio ut rutrum pellentesque. Fusce eget molestie
-                    est, at rutrum est. Nullam scelerisque libero nunc, vitae
-                    ullamcorper elit volutpat ut.
+                    "Dabur": Dabur has a strong global presence, with products
+                    available in over 100 countries. The company has
+                    manufacturing facilities in India, the Middle East, Africa,
+                    and other regions, catering to a diverse range of consumers.
+                    Dabur’s international strategy focuses on adapting its
+                    Ayurvedic and natural products to suit the tastes and
+                    preferences of different markets..
                   </h5>
-                  <h5 className="mb-1">Client Name</h5>
+                  <h5 className="mb-1">Siddharth</h5>
                   <h6 className="fw-light text-white fst-italic mb-0">
                     Profession
                   </h6>
@@ -131,14 +134,16 @@ const Testimonial = () => {
                     style={{ maxWidth: "150px", borderRadius: "50%" }} // adjust maxWidth as needed
                   />
                   <h5 className="fw-light lh-base text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Duis aliquet, erat non malesuada consequat, nibh erat tempus
-                    risus, vitae porttitor purus nisl vitae purus. Praesent
-                    tristique odio ut rutrum pellentesque. Fusce eget molestie
-                    est, at rutrum est. Nullam scelerisque libero nunc, vitae
-                    ullamcorper elit volutpat ut.
+                    "Himalaya": Research and development are central to
+                    Himalaya's operations. The company has a dedicated R&D team
+                    that works on developing new products and improving existing
+                    formulations using modern scientific methods combined with
+                    traditional Ayurvedic knowledge. Himalaya’s R&D efforts are
+                    aimed at ensuring the efficacy, safety, and quality of its
+                    products, and it invests in clinical trials and other
+                    research to support this.
                   </h5>
-                  <h5 className="mb-1">Client Name</h5>
+                  <h5 className="mb-1">Vivaan</h5>
                   <h6 className="fw-light text-white fst-italic mb-0">
                     Profession
                   </h6>
