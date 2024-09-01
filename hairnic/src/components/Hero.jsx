@@ -1,10 +1,14 @@
 import React from "react";
 import "../lib/animate/animate.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+<<<<<<< HEAD
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
+=======
+import "bootstrap/dist/js/bootstrap.bundle.min";
+>>>>>>> 31a373c1e221ee799abed3fd71de970de2bbe3bd
 
 export default function Hero() {
   return (
@@ -229,6 +233,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
             <div className="col-lg-6">
               <Carousel
                 showThumbs={false}
@@ -304,6 +309,31 @@ export default function Hero() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+=======
+          </div>
+        </div>
+      </div>
+
+      {/* Carousel Controls */}
+      <button
+        className="carousel-control-prev"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="prev"
+      >
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button
+        className="carousel-control-next"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="next"
+      >
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+>>>>>>> 31a373c1e221ee799abed3fd71de970de2bbe3bd
     </div>
   );
 }

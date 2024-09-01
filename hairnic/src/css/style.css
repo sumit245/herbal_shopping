@@ -65,9 +65,15 @@ img.animated.pulse {
 /*** Navbar ***/
 .sticky-top {
   top: -150px;
+<<<<<<< HEAD
   transition: .5s;
 }
 
+=======
+  transition: 0.5s;
+  background-color: var(--bs-primary);
+}
+>>>>>>> 31a373c1e221ee799abed3fd71de970de2bbe3bd
 .logo {
   height: 60px;
   width: 150px;
@@ -103,12 +109,18 @@ img.animated.pulse {
 }
 
 @media (max-width: 991.98px) {
+<<<<<<< HEAD
 	.navbar{
 	  padding: 0px 0px !important;
 	  height:auto;	
     }
   .navbar .navbar-nav {
     background: var(--bs-white);
+=======
+  .navbar .navbar-nav {
+    padding: 0 15px;
+    background: var(--bs-primary);
+>>>>>>> 31a373c1e221ee799abed3fd71de970de2bbe3bd
   }
 
   .navbar .navbar-nav .nav-link {
@@ -117,6 +129,7 @@ img.animated.pulse {
   }
 }
 
+<<<<<<< HEAD
 
 
 
@@ -131,6 +144,9 @@ img.animated.pulse {
 		justify-content:center;
 		align-items:center;
 	}
+=======
+@media (min-width: 992px) {
+>>>>>>> 31a373c1e221ee799abed3fd71de970de2bbe3bd
   .navbar .nav-item .dropdown-menu {
     display: block;
     border: none;
@@ -149,6 +165,7 @@ img.animated.pulse {
   }
 }
 
+<<<<<<< HEAD
 .search{
 	width:100%;
 	border-radius:2rem;
@@ -174,6 +191,8 @@ box-shadow: 0 0 0 0.25rem rgba(132, 199, 51,0.25);
 }
 
 
+=======
+>>>>>>> 31a373c1e221ee799abed3fd71de970de2bbe3bd
 /*** Hero Header ***/
 .hero-header {
   position: relative;
@@ -200,7 +219,11 @@ box-shadow: 0 0 0 0.25rem rgba(132, 199, 51,0.25);
   z-index: 1;
 }
 
+<<<<<<< HEAD
 .hero-header .breadcrumb-item+.breadcrumb-item::before {
+=======
+.hero-header .breadcrumb-item + .breadcrumb-item::before {
+>>>>>>> 31a373c1e221ee799abed3fd71de970de2bbe3bd
   color: var(--bs-light);
 }
 
@@ -228,7 +251,10 @@ box-shadow: 0 0 0 0.25rem rgba(132, 199, 51,0.25);
   background: url(../img/bg.png) center center no-repeat;
   background-size: cover;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 31a373c1e221ee799abed3fd71de970de2bbe3bd
 /* .col-lg-6 {
   background-color: transparent; 
 } */
@@ -413,6 +439,7 @@ box-shadow: 0 0 0 0.25rem rgba(132, 199, 51,0.25);
 }
 
 .newsletter .form-control {
+<<<<<<< HEAD
   background: var(--bs-light);
 }
 
@@ -430,6 +457,12 @@ box-shadow: 0 0 0 0.25rem rgba(132, 199, 51,0.25);
   width: 100%;
 }
 
+=======
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/*** Footer ***/
+>>>>>>> 31a373c1e221ee799abed3fd71de970de2bbe3bd
 .footer .btn.btn-link {
   display: block;
   margin-bottom: 10px;
@@ -485,6 +518,11 @@ box-shadow: 0 0 0 0.25rem rgba(132, 199, 51,0.25);
 /* deals of the day */
 
 .col-lg-6 {
+<<<<<<< HEAD
   background-color: transparent;
   /* Remove any background color */
 }
+=======
+  background-color: transparent; /* Remove any background color */
+}
+>>>>>>> 31a373c1e221ee799abed3fd71de970de2bbe3bd

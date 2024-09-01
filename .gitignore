@@ -25,5 +25,8 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 
 nirogyaayurveda.com.pem
+=======
+>>>>>>> 31a373c1e221ee799abed3fd71de970de2bbe3bd
