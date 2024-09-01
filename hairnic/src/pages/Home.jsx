@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-// import MyNavbar from "../components/MyNavbar";
-// import Hero from "../components/Hero";
+import MyNavbar from "../components/MyNavbar";
+import Hero from "../components/Hero";
+import Features from "../components/Features";
 // import Product from "../components/Product";
 // import HowToUse from "../components/HowToUse";
 // import CartProduct from "../components/CartProduct";
@@ -9,7 +10,6 @@ import React, { useEffect } from "react";
 // import Footer from "../components/Footer";
 // import Contact from "../components/Contact";
 // import DealsOfTheDay from "../components/DealsOfTheDay";
-// import Features from "../components/Features";
 // import About from "../components/About";
 import { useDispatch } from "react-redux";
 import { getProducts } from "../redux/actions/actions";
@@ -24,13 +24,11 @@ export default function Home() {
   }, [])
 
   return (
-    <div className=" container">
-      <h5>Coming Soon</h5>
-
-      {/* <MyNavbar /> */}
-      {/* <Hero /> */}
-      {/* <Features />
-      <About />
+    <React.Fragment>
+      <MyNavbar />
+      <Hero />
+      <Features />
+      {/*<About />
       <DealsOfTheDay /> */}
       {/* <Product /> */}
       {/* <HowToUse /> */}
@@ -39,6 +37,6 @@ export default function Home() {
       <BlogArticle />
       <Contact />
       <Footer /> */}
-    </div>
+    </React.Fragment>
   );
 }
