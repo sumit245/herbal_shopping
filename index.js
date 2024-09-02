@@ -23,16 +23,13 @@ require('dotenv').config()
 // const { MONGODB_URL, PORT } = process.env;
 // console.log(MONGODB_URL);
 
-const port = 4000;
+const port = 5000;
 
 // mongoose
 //   .connect(MONGODB_URL)
 //   .then((result) => console.log("Database is connected"))
 //   .catch((err) => console.log(err));
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`)
-})
 
 
 app.use(express.json()) // Parse result into json
@@ -41,12 +38,12 @@ app.use(cors()); // Allow cross origin resource sharing
 
 // app.use(express.static('uploads'))
 
-app.use(express.static(path.join(__dirname, "./dist/")));
+app.use(express.static(path.join(__dirname, "dist")));
 
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./dist/"));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "dist"));
   res.setHeader('Access-Control-Allow-Origin', "*")
-  res.setHeader('Access-Control-Allow-Headers', "application/json")
+  // res.setHeader('Access-Control-Allow-Headers', "application/json")
 });
 // For Production serve html from server
 

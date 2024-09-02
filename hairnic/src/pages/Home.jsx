@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import MyNavbar from "../components/MyNavbar";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
-// import Product from "../components/Product";
+import Product from "../components/Product";
 // import HowToUse from "../components/HowToUse";
 // import CartProduct from "../components/CartProduct";
 // import Testimonial from "../components/Testimonial";
@@ -28,9 +28,10 @@ export default function Home() {
       <MyNavbar />
       <Hero />
       <Features />
+      <Product />
       {/*<About />
       <DealsOfTheDay /> */}
-      {/* <Product /> */}
+      {/*  */}
       {/* <HowToUse /> */}
       {/* <CartProduct />
       <Testimonial />
